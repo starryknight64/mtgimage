@@ -1,0 +1,4 @@
+NGX_ADDON_DEPS="$NGX_ADDON_DEPS $ngx_addon_dir/src/ddebug.h $ngx_addon_dir/src/ngx_http_set_default_value.h $ngx_addon_dir/src/ngx_http_set_hashed_upstream.h $
+CFLAGS="$CFLAGS -DNDK_SET_VAR -DNDK_UPSTREAM_LIST"
+USE_SHA1=YES
+USE_MD5=YES

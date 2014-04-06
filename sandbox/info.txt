@@ -1,0 +1,70 @@
+/---------------\
+| NGINX Compile |
+\---------------/
+./configure --with-http_stub_status_module --add-module=/mnt/compendium/DevLab/mtgimage/nginx/modules/mtgimage_normalizer/
+
+
+/-------------------\
+| New Image Process |
+\-------------------/
+rename .full.jpg .jpg *.full.jpg
+bfr eval "newFilename = filename.toLowerCase();" *.jpg
+
+
+# IF not have crops, make them:
+
+#MED card:
+find ./ -type f -name "*.jpg" -exec convert {} -crop 254x205+22+30 {}.crop.jpg \;
+
+#Vanguard CARD:
+find ./ -type f -name "*.jpg" -exec convert {} -crop 378x331+50+61 {}.crop.jpg \;
+
+#Plane/Phenomenon CARD (just run util/crop_planes_schemes_phenomenon.js):
+find ./ -type f -name "*.jpg" -exec convert {} -crop 1255x520+117+135 {}.crop.jpg \;
+
+#Scheme CARD (just run util/crop_planes_schemes_phenomenon.js):
+find ./ -type f -name "*.jpg" -exec convert {} -crop 494x519+93+104 {}.crop.jpg \;
+
+#Token CARD No text box
+find ./ -type f -name "*.jpg" -exec convert {} -crop 421x300+30+163 {}.crop.jpg \;
+
+#Token CARD With text box
+find ./ -type f -name "*.jpg" -exec convert {} -crop 421x184+30+163 {}.crop.jpg \;
+
+#OLD CARD:
+find ./ -type f -name "*.jpg" -exec convert {} -crop 392x316+45+54 {}.crop.jpg \;
+
+#NEW CARD:
+find ./ -type f -name "*.jpg" -exec convert {} -crop 421x309+30+70 {}.crop.jpg \;
+
+#Gatherer New Card:
+find ./ -type f -name "*.jpg" -exec convert {} -crop 182x134+20+37 {}.crop.jpg \;
+
+
+# For all cards after making crops
+rename .jpg.crop.jpg .crop.jpg *.jpg
+
+# Make the HQ and non HQ versions
+find ./ -type f -name "*.jpg" -exec node /mnt/compendium/DevLab/mtgimage/util/compressImages.js {} \;
+find ./ -type f -exec chmod 644 {} \;
+
+
+
+
+
+
+
+# Make symlinks
+cd util
+node createNewImaegSymlinks.js DDM
+
+# ALERT!!!! I have not addded support to the above script for split/flip cards, here are the rules:
+# If it has any split/flip cards make sure it's named right. Good: roughtumble.jpg   Bad: rough.jpg or tumble.jpg
+# Also make symlinks for the different parts
+# Flip any cards that need flipped
+# Also the .hq.jpg and .crop.hq.jpg versions for both all parts of splits and both flips!
+
+
+## IMPORTANT!!!
+# Make sure old sets that now have high resolution images are removed from nginx expiration and make sure any brand
+# new sets that are using lower resolution gatherer images are added to nginx for a 1 week expiration

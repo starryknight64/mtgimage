@@ -1,0 +1,6 @@
+node_modules
+mtgimage.sublime-project
+mtgimage.sublime-workspace
+web/actual
+nginx
+deploy

@@ -1,0 +1,431 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!--[if IE]><![endif]-->
+<html>
+	<head>
+		<title>{title}</title>
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-26058758-5', 'mtgimage.com');
+			ga('send', 'pageview');
+		</script>
+		<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
+		<link type="text/css" rel="stylesheet" href="index.css">
+		<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+		<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+	</head>
+	<body><a name="top"></a>
+		<center><h1 style="font-size: 240%;">MTG Image</h1></center>
+		<p style="margin-top: 1.0em;">This project provides <a href="http://www.wizards.com/Magic/">Magic the Gathering</a> card images for developers to easily use in their projects.<br>
+		<br>
+        For more details see: <a href="#documentation">Documentation</a> and <a href="http://forums.mtgsalvation.com/showthread.php?t=561388">Discussion Thread</a><br>
+        <br>
+		Any bugs or feedback, e-mail me at <a href="mailto:robert@cosmicrealms.com">robert@cosmicrealms.com</a><br>
+		</p>
+		<br>
+		<br>
+		<h2>Current Version: <span class="value">{version}</span></h2>
+		<h2>&nbsp;&nbsp;&nbsp;Last Updated: <span class="value">{lastUpdated}</span><a href="#changeLog">(change log)</a></h2>
+		<br>
+		<br>
+		<h2 style="display: none;"><span style="color: red; text-decoration: underline;">ALERT:</span> Alert message goes here</h2>
+		<br>
+		<br>
+		<hr>
+		<a name="documentation"></a>
+		<h1>Documentation<a href="#top">(back to top)</a></h1>
+		<p>Most images are in 480x680 resolution and come from <a href="http://www.slightlymagic.net/forum/viewforum.php?f=15">CCGHQ</a>.<br>
+		<br>
+		Lower resolution images are provided until a higher resolution is available.<br>
+		<br>
+		Reference the <a href="#setList">set list</a> table to see which resolution each set is currently in.<br>
+		<br>
+		Some cards may be in a different resolution, such as the 'plane' cards in the Planechase sets.<br>
+		<br>
+		URLs are case insensitive and multiple naming formats are supported:
+		<ul>
+			<li>Card Names&nbsp;&nbsp;&nbsp;Supported</li>
+			<li><a href="http://mtgjson.com">MTGJSON</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Supported</li>
+			<li><a href="http://www.woogerworks.com/">Cockatrice</a>&nbsp;&nbsp;&nbsp;Supported</li>
+			<li><a href="http://www.slightlymagic.net/forum/viewforum.php?f=15">CCGHQ</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Supported<span style="color: pink; font-weight: bold;">*</span></li>
+		</ul>
+		<br>
+		<span style="color: pink; font-weight: bold;">*</span> A few sets are not available, see: <a href="#missing-sets">Missing Sets</a><br>
+		<br>
+		<br>
+		Images are available via <strong>3</strong> different methods:<br>
+		<br>
+		</p>
+		<div class="code">
+			<h2>Access By Set</h2>
+			<br>
+			<strong>Format</strong>: http://mtgimage.com/set/&lt;set code&gt;/&lt;card name&gt;.jpg<br>
+			<br>
+			or<br>
+			<br>
+			<strong>Format</strong>: http://mtgimage.com/setname/&lt;set name&gt;/&lt;card name&gt;.jpg<br>
+			<br>
+			<br>
+			<strong>Examples</strong>:<br>
+			<ul>
+				<li><a href="/set/ARB/Sen Triplets.jpg">Sen Triplets</a> &nbsp;http://mtgimage.com/set/ARB/Sen Triplets.jpg</li>
+				<li><a href="/set/RTR/Archweaver.full.jpg">Archweaver</a> &nbsp;&nbsp;&nbsp;http://mtgimage.com/set/RTR/Archweaver.full.jpg</li>
+				<li><a href="/setname/Zendikar/Harrow.jpg">Harrow</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://mtgimage.com/setname/Zendikar/Harrow.jpg</li>
+			</ul>
+			<br>
+			<p>
+			You can browse the set images via <a href="/set/">set code</a> or <a href="/setname/">set name</a><br>
+			<br>
+			Even though when browsing names are lowercase, you can access them with different cases/formats.<br>
+			</p>
+		</div>
+		<br>
+		<br>
+		<div class="code">
+			<h2>Access By Card</h2>
+			<br>
+			<strong>Format</strong>: http://mtgimage.com/card/&lt;card name&gt;.jpg<br>
+			<br>
+			<strong>Examples</strong>:<br>
+			<ul>
+				<li><a href="/card/Craw Wurm.jpg">Craw Wurm</a> &nbsp;&nbsp;&nbsp;http://mtgimage.com/card/Craw Wurm.jpg</li>
+				<li><a href="/card/Serra_Angel.jpg">Serra Angel</a> &nbsp;http://mtgimage.com/card/Serra_Angel.jpg</li>
+			</ul>
+			<br>
+			<p>The card used comes from the latest set it was printed in, unless an earlier set has a higher resolution.<br>
+			<br>
+			Token images are not available this way. You need to access those by set/setname.<br>
+			</p>
+		</div>
+		<br>
+		<br>
+		<div class="code">
+			<h2>Access By multiverseid</h2>
+			<br>
+			<strong>Format</strong>: http://mtgimage.com/multiverseid/&lt;multiverseid&gt;.jpg<br>
+			<br>
+			<strong>Examples</strong>:<br>
+			<ul>
+				<li><a href="/multiverseid/174859.jpg">Elspeth, Knight-Errant</a> &nbsp;&nbsp;http://mtgimage.com/multiverseid/174859.jpg</li>
+				<li><a href="/multiverseid/279712.jpg">Akroma's Memorial</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://mtgimage.com/multiverseid/279712.jpg</li>
+			</ul>
+			</p>
+		</div>
+		<br>
+		<br>
+		Feel free to directly link to the images with your website or app.<br>
+		<br>
+		The images are hosted on a dedicated server with a gigabit connection and tons of bandwidth.<br>
+		<br>
+		<br>
+		<hr>
+		<h1>Crops</h1>
+		For artwork crops instead of full cards, change the image name to end with '-crop.jpg' or '.crop.jpg' instead of '.jpg'<br>
+		<br>
+		Like cards, crops are slightly compressed. For uncompressed crops the image name should end with '.crop.hq.jpg'<br>
+		<br>
+		Crops have various resolutions.<br>
+		<br>
+		<br>
+		<hr>
+		<h1>Split Cards</h1>
+		Split cards like 'Fire // Ice' can be accessed in multiple ways:<br>
+		<ul>
+			<li><a href="/set/DDJ/fireice.jpg">fireice.jpg</a></li>
+			<li><a href="/set/DDJ/fire ice.jpg">fire ice.jpg</a></li>
+			<li><a href="/set/DDJ/fire.jpg">fire.jpg</a></li>
+			<li><a href="/set/DDJ/ice.jpg">ice.jpg</a></li>
+		</ul>
+		<br>
+		<hr>
+		<a name="imageCompression"></a>
+		<h1>Image Compression</h1>
+		The images have been compressed a bit to save on bandwidth.<br>
+		<br>
+		If you want to access the full quality, uncompressed image, change the image name to end with '.hq.jpg' instead of '.jpg'<br>
+		<br>
+		Note: There is very little visual difference between the two.<br>
+		<br>
+		Example <a href="/set/M14/Chandra's Phoenix.jpg">Chandra's Phoenix.jpg (95k)</a> vs <a href="/set/M14/Chandra's Phoenix.hq.jpg">Chandra's Phoenix.hq.jpg (471k)</a>
+		<br>
+		<br>
+		<hr>
+		<h1>Mana and Set Symbols<a href="#top">(back to top)</a></h1>
+		<p>If you are looking for symbols, I don't provide those here.<br>
+		<br>
+		However there are two really great resources available for them here:<br>
+		<ul>
+			<li><a href="http://www.mtgsalvation.com/forums/creativity/artwork/494438-baconcatbugs-set-and-mana-symbol-megapack">BaconCatBug's Set and Mana Symbol Megapack</a></li>
+			<li><a href="http://www.slightlymagic.net/forum/viewtopic.php?f=15&t=7010">Vector Set Symbols and Watermarks</a></li>
+		</ul>
+		<br>
+		<br>
+		<hr>
+		<a name="changeLog"></a>
+		<h1>Change Log<a href="#top">(back to top)</a></h1>
+		<table class="changeLog">
+			<thead>
+				<tr>
+					<th>Version</th>
+					<th>Date</th>
+					<th>Changes</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>4.2.0</td>
+					<td>Mar 30, 2014</td>
+					<td>
+						<ul>
+							<li>Added set:
+								<ul>
+									<li>Rivals Quick Start Set (RQS)</li>
+								</ul>
+							</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td>4.1.0</td>
+					<td>Mar 30, 2014</td>
+					<td>
+						<ul>
+							<li>Added sets:
+								<ul>
+									<li>Introductory Two-Player Set (ITP)</li>
+									<li>Deckmasters (DKM)</li>
+								</ul>
+							</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td>4.0.0</td>
+					<td>Mar 29, 2014</td>
+					<td>
+						<ul>
+							<li>Added set:
+								<ul>
+									<li>Anthologies (ATH)</li>
+								</ul>
+							</li>
+							<li>Version number is now three digits in major.minor.bug format. "minor" will be updated whenever a new set is added. "bug" will be updated when small changes take place.</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td>3.3</td>
+					<td>Feb 26, 2014</td>
+					<td>
+						<ul>
+							<li>Added set:
+								<ul>
+									<li>Duel Decks: Jace vs. Vraska (DDM)</li>
+								</ul>
+							</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td>3.2</td>
+					<td>Feb 25, 2014</td>
+					<td>
+						<ul>
+							<li>Added set:
+								<ul>
+									<li>Happy Holidays (HHO)</li>
+								</ul>
+							</li>
+						</ul>
+						<li>Added last remaining crops for Schemes, Planes, Phenomenon and tokens. Now every card has crops.</li>
+						<li>Sets can now also be accessed via their legacy gatherer 2-digit set codes</li>
+					</td>
+				</tr>
+				<tr>
+					<td>3.1</td>
+					<td>Feb 15, 2014</td>
+					<td>
+						<ul>
+							<li>Images now have a 2 year HTTP cache expiration date (instead of 1 week). Sets that don't have high resolution images yet will only have a 1 week HTTP cache expiration so when high resolution images are available people get the new ones in less than a week if cached.</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td>3.0</td>
+					<td>Feb 13, 2014</td>
+					<td>
+						<ul>
+							<li>V13, C13: Images are now higher resolution</li>
+							<li>Crops have been added for ALL sets that were missing them (V13, C13, THS, UNH, UGL, MED, ME2, ME3, ME4, VAN, PPR)</li>
+							<li>Images have been compressed in order to load faster. There is very little visual difference. Uncompressed versions are still available, see: <a href="#imageCompression">Image Compression</a></li>
+							<li>Fixed bugs when accessing via multiverseid (crops were missing, case was sensitive and the expires header was missing)</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td>2.6</td>
+					<td>Feb 11, 2014</td>
+					<td>
+						<ul>
+							<li>Added support for 'old' set codes: 9E, 8E, 7E, 6E, 5E, 4E, D2, COM, P02, NEM, PCH, FVR, FVL, FVE, CFX</li>
+							<li>Added an 'Expires' HTTP header to all images for better caching</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td>2.5</td>
+					<td>Jan 29, 2014</td>
+					<td>
+						<ul>
+							<li>Added set:
+								<ul>
+									<li>Born of the Gods (BNG)</li>
+								</ul>
+							</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td>2.4</td>
+					<td>Jan 7, 2014</td>
+					<td>
+						<ul>
+							<li>Theros images are now higher resolution.</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td>2.3</td>
+					<td>Dec 23, 2013</td>
+					<td>
+						<ul>
+							<li>“Curly quotes” are now correctly handled for cards like: <a href="http://dev.mtgimage.com/set/PTK/Kongming, “Sleeping Dragon”.jpg">Kongming, “Sleeping Dragon”</a></li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td>2.2</td>
+					<td>Dec 16, 2013</td>
+					<td>
+						<ul>
+							<li>Added sets:
+								<ul>
+									<li>Vanguard (VAN)</li>
+									<li>Masters Edition (MED)</li>
+									<li>Masters Edition II (ME2)</li>
+									<li>Masters Edition III (ME3)</li>
+									<li>Masters Edition IV (ME4)</li>
+								</ul>
+							</li>
+							<li>Added crops for most sets and cards.</li>
+							<li>Fixed the /multiverseid/ lookup for Planechase 'planes' and Archenemy 'schemes'</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td>2.1</td>
+					<td>Dec 10, 2013</td>
+					<td>
+						<ul>
+							<li>Added set:
+								<ul>
+									<li>Promo set for Gatherer (PPR)</li>
+								</ul>
+							</li>
+							<li>Underscores "_" can be used instead of spaces " " in card names</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td>2.0</td>
+					<td>Dec 10, 2013</td>
+					<td>
+						<ul>
+							<li>Card names, set codes and set names are now case insensitive</li>
+							<li>CCGHQ and Cockatrice naming conventions are now support</li>
+							<li>Added tokens and planes</li>
+							<li>Added multiverseid access</li>
+							<li>Removed zips, see <a href="http://www.slightlymagic.net/forum/viewforum.php?f=15">CCGHQ</a> for zips</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td>1.0</td>
+					<td>Nov 15, 2013</td>
+					<td><ul><li>First release!</li></ul></td>
+				</tr>
+			</tbody>
+		</table>
+		<hr>
+		<a name="setList"></a>
+		<h1>Set List<a href="#top">(back to top)</a></h1>
+		<table class="setListTable">
+			<thead>
+				<tr>
+					<th colspan="6">Set List</th>
+				</tr>
+				<tr>
+					<th>Name</th>
+					<th>Code</th>
+					<th>Release Date</th>
+					<th>Resolution</th>
+				</tr>
+			</thead>
+			<tbody>
+				{#sets}
+					<tr>
+						<td>{name}</td>
+						<td>{code}</td>
+						<td>{releaseDate}</td>
+						<td>{resolution|s}</td>
+					</tr>
+				{/sets}
+			</tbody>
+		</table>
+		<hr>
+		<a name="license"></a>
+		<h1>License and Copyright<a href="#top">(back to top)</a></h1>
+		<p>Card images are all copyright Wizards of the Coast.<br>
+		<br>
+		This website is not affiliated with Wizards of the Coast in any way.<br>
+		<br></p>
+		<hr>
+		<a name="thanks"></a>
+		<h1>Thanks<a href="#top">(back to top)</a></h1>
+		<ul>
+			<li>HUGE thanks to <a href="http://www.slightlymagic.net/forum/viewforum.php?f=15">CCGHQ</a>. Without their awesome work, this site would not be possible.</li>
+			<li><a href="http://wiki.mtgsalvation.com/article/Main_Page">MTG Salvation Wiki</a> for an awesome resource</li>
+			<li><a href="http://company.wizards.com/">Wizards of the Coast</a> for continuing to support and develop game that I first started playing back in 1994!</li>
+		</ul>
+		<br>
+		<br>
+		<hr>
+		<a name="missing-sets"></a>
+		<h1>Missing Sets<a href="#top">(back to top)</a></h1>
+		<ul>
+			<li>Deck Builder's Toolkit Series</li>
+			<li>Renaissance (Non-English)</li>
+			<li>Rival Quick Start Set (currently using 4th edition images)</li>
+		</ul>
+		<br>
+		<p>These sets are not on gatherer and I have not located any scans of the cards, thus they are not available here.</p>
+		<br>
+		<br>
+		<hr>
+		<a name="known-issues"></a>
+		<h1>Known Issues<a href="#top">(back to top)</a></h1>
+		<ul>
+			<li>Incorrect alternate basic land images for: Masters Edition and Masters Edition III</li>
+			<li>Incorrect alternate images for Masters Edition IV: Urza's Tower, Urza's Power Plant, Urza's Mine</li>
+			<li>Some of the card images in the 'Promo set for Gatherer' set are not in English</li>
+		</ul>
+		<br>
+		<p>If you know where images are available to fix any of the above known issues, let me know <a href="mailto:robert@cosmicrealms.com">robert@cosmicrealms.com</a></p>
+		<br>
+		<br>
+	</body>
+</html>
+

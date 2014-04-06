@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!--[if IE]><![endif]-->
+<html>
+	<head>
+		<title>side by side image comparison</title>
+		<style>
+			div
+			{
+				margin: 100px;
+			}
+
+			body
+			{
+				text-align: center;
+				background-color: black;
+			}
+
+			img
+			{
+				margin: 0 25px;
+			}
+
+			span
+			{
+				display: inline-block;
+				color: white;
+				width: 550px;
+				font-size: 40px;
+			}
+		</style>
+	</head>
+	<body>
+		{#images}
+			<div>
+				<img src="file:///home/sembiance/tmp/before/{imageName}.jpg">
+				<img src="file:///home/sembiance/tmp/after/{imageName}.jpg"><br>
+				<span>{beforeSize}</span>
+				<span>{afterSize} ({savings}%)</span>
+			</div>
+		{/images}
+	</body>
+</html>

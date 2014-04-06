@@ -1,0 +1,23 @@
+/---------------\
+| High Priority |
+\---------------/
+
+
+/-----------------\
+| Medium Priority |
+\-----------------/
+
+
+/----------------\
+| Lower Priority |
+\----------------/
+* Add symbols: http://www.mediafire.com/folder/92vnddvuu7ian/BaconCatBug's_SVG_Expansion_Symbol_Pack
+
+* Consider providing zip files again. Maybe one for each formatted card names (so a ccghq zip, cockatrice, mtgjson, etc)
+  util/create_zips.js already has this functionality, but because cockatrice doesn't have set codes, it doesn't support that yet
+  and because CCGHQ differs from MTGJSON set codes (PO2 vs P02) then that doesn't work 100% right either
+  Will probably need to convert/standardize on the MTJSON set codes since that's what I use to generate the index HTML
+
+* Add a search page (different page) that does the 'instant' search like my mtginstant search engine did, except only search the name of the card and provide data a bit differently, making sure to place emphasis on the link to the cards found (maybe just the links (along with data) and hover shows the image, or maybe show images, hrm)
+
+* Add pre-rendered cardname-bordered.png files that have the correct border around the cards

@@ -1,0 +1,16 @@
+{
+	"name"					: "mtgimage",
+	"version"				: "0.1.0",
+	"author"				: "Robert Schultz <robert@cosmicrealms.com>",
+	"description"			: "mtgimage.com package",
+	"private"				: true,
+	"dependencies"			:
+	{
+		"node-utils"		: "git://github.com/Sembiance/node-utils.git",
+		"moment"			: ">= 2.0.0",
+		"tiptoe"			: ">= 0.1.1",
+		"rimraf"			: ">= 2.2.2",
+		"glob"				: ">= 3.2.7",
+		"request"			: ">= 2.27.0"
+	}
+}
