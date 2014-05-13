@@ -95,6 +95,12 @@ exports.GET_SOURCES =
 							sources.push(TEST_URL + "/set/" + SETDATA.gathererCode + "/" + card.imageName + ".hq.jpg");
 						}
 
+						if(SETDATA.hasOwnProperty("oldCode"))
+						{
+							sources.push(TEST_URL + "/set/" + SETDATA.oldCode + "/" + card.imageName + ".jpg");
+							sources.push(TEST_URL + "/set/" + SETDATA.oldCode + "/" + card.imageName + ".hq.jpg");
+						}
+
 						sources.push(TEST_URL + "/card/" + card.imageName.trim("0123456789 .") + ".jpg");
 						sources.push(TEST_URL + "/card/" + card.imageName.trim("0123456789 .") + ".hq.jpg");
 
@@ -110,19 +116,17 @@ exports.GET_SOURCES =
 							sources.push(TEST_URL + "/set/" + SETDATA.gathererCode + "/" + card.imageName + ".hq.jpg");
 						}
 
+						if(SETDATA.hasOwnProperty("oldCode"))
+						{
+							sources.push(TEST_URL + "/set/" + SETDATA.oldCode + "/" + card.imageName + ".jpg");
+							sources.push(TEST_URL + "/set/" + SETDATA.oldCode + "/" + card.imageName + ".hq.jpg");
+						}
+
 						sources.push(TEST_URL + "/card/" + card.imageName.trim("0123456789 .") + "-crop.jpg");
 						sources.push(TEST_URL + "/card/" + card.imageName.trim("0123456789 .") + "-crop.hq.jpg");
 
 						sources.push(TEST_URL + "/setname/" + set.name + "/" + card.imageName + "-crop.jpg");
 						sources.push(TEST_URL + "/setname/" + set.name + "/" + card.imageName + "-crop.hq.jpg");
-					});
-				});
-
-				Object.forEach(C.OLD_SET_CODE_MAP, function(oldCode, newCode)
-				{
-					sets[newCode].cards.forEach(function(card)
-					{
-						sources.push(TEST_URL + "/set/" + oldCode + "/" + card.imageName + ".jpg");
 					});
 				});
 
@@ -158,14 +162,6 @@ exports.GET_SOURCES =
 
 						sources.push(TEST_URL + "/multiverseid/" + card.multiverseid + "-crop.jpg");
 						sources.push(TEST_URL + "/multiverseid/" + card.multiverseid + "-crop.hq.jpg");
-					});
-				});
-
-				Object.forEach(C.OLD_SET_CODE_MAP, function(oldCode, newCode)
-				{
-					sets[newCode].cards.forEach(function(card)
-					{
-						sources.push(TEST_URL + "/set/" + oldCode + "/" + card.imageName + ".jpg");
 					});
 				});
 

@@ -19,8 +19,8 @@ var dustData =
 {
 	title : "Magic the Gathering card images",
 	sets  : [],
-	version : "4.2.0",
-	lastUpdated : "Mar 30, 2014"
+	version : "4.4.0",
+	lastUpdated : "Apr 25, 2014"
 };
 
 var ACTUAL_PATH = path.join(__dirname, "actual");
@@ -99,21 +99,30 @@ tiptoe(
 		if(!CREATE_LINKS)
 			return this();
 
-		base.info("Creating old set code links...");
-
-		Object.forEach(C.OLD_SET_CODE_MAP, function(oldCode, newCode)
-		{
-			var oldCodePath = path.join(SET_PATH, oldCode.toLowerCase());
-			if(!fs.existsSync(oldCodePath))
-				fs.symlinkSync(newCode.toLowerCase(),oldCodePath);
-		});
-
 		base.info("Creating set name links...");
 		
 		VALID_SETS.serialForEach(function(SET, subcb)
 		{
 			var setSrcPath = path.join("..", "set", SET.code.toLowerCase());
 			fs.symlink(setSrcPath, path.join(SETNAME_PATH, SET.name.strip(":\"?").toLowerCase()), subcb);
+		}.bind(this), this);
+	},
+	function createOldSetCodeLinks()
+	{
+		if(!CREATE_LINKS)
+			return this();
+
+		base.info("Creating oldCode links...");
+		VALID_SETS.serialForEach(function(SET, subcb)
+		{
+			if(!SET.hasOwnProperty("oldCode"))
+				return setImmediate(subcb);
+
+			var oldCodePath = path.join(SET_PATH, SET.oldCode.toLowerCase());
+			if(fs.existsSync(oldCodePath))
+				return setImmediate(subcb);
+
+			fs.symlink(SET.code.toLowerCase(), oldCodePath, subcb);
 		}.bind(this), this);
 	},
 	function createGathererSetCodeLinks()
@@ -190,6 +199,7 @@ tiptoe(
 		});
 
 		dustData.sets = dustData.sets.sort(function(a, b) { return moment(a.releaseDate, "YYYY-MM-DD").unix()-moment(b.releaseDate, "YYYY-MM-DD").unix(); });
+		dustData.changeLog = fs.readFileSync(path.join(__dirname, "changelog.html"), {encoding : "utf8"});
 		dustUtil.render(__dirname, "index", dustData, { keepWhitespace : true }, this);
 	},
 	function saveIndex(html)

@@ -1,3 +1,12 @@
+/-------\
+| Links |
+\-------/
+Images:
+http://www.slightlymagic.net/forum/viewforum.php?f=15
+http://www.mediafire.com/folder/qifk53rxg2dhx/Magic_The_Gathering_sets
+
+
+
 /---------------\
 | NGINX Compile |
 \---------------/
@@ -48,12 +57,6 @@ rename .jpg.crop.jpg .crop.jpg *.jpg
 find ./ -type f -name "*.jpg" -exec node /mnt/compendium/DevLab/mtgimage/util/compressImages.js {} \;
 find ./ -type f -exec chmod 644 {} \;
 
-
-
-
-
-
-
 # Make symlinks
 cd util
 node createNewImaegSymlinks.js DDM
@@ -63,7 +66,6 @@ node createNewImaegSymlinks.js DDM
 # Also make symlinks for the different parts
 # Flip any cards that need flipped
 # Also the .hq.jpg and .crop.hq.jpg versions for both all parts of splits and both flips!
-
 
 ## IMPORTANT!!!
 # Make sure old sets that now have high resolution images are removed from nginx expiration and make sure any brand
