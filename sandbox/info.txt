@@ -59,7 +59,7 @@ find ./ -type f -exec chmod 644 {} \;
 
 # Make symlinks
 cd util
-node createNewImaegSymlinks.js DDM
+node createNewImageSymlinks.js DDM
 
 # ALERT!!!! I have not addded support to the above script for split/flip cards, here are the rules:
 # If it has any split/flip cards make sure it's named right. Good: roughtumble.jpg   Bad: rough.jpg or tumble.jpg

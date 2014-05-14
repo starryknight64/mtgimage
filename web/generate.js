@@ -19,8 +19,8 @@ var dustData =
 {
 	title : "Magic the Gathering card images",
 	sets  : [],
-	version : "4.4.0",
-	lastUpdated : "Apr 25, 2014"
+	version : "4.5.0",
+	lastUpdated : "May 13, 2014"
 };
 
 var ACTUAL_PATH = path.join(__dirname, "actual");
@@ -54,7 +54,8 @@ var EXTRA_CARD_SYMLINKS =
 var EXTRA_SETNAME_SYMLINKS =
 {
 	"cmd" : "commander",
-	"pd2" : "premium deck series fire & lightning"
+	"pd2" : "premium deck series fire & lightning",
+	"md1" : "modern event deck"
 };
 
 var EXTRA_MULTIVERSEID_SYMLINKS =
