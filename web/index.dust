@@ -12,7 +12,7 @@
 			ga('create', 'UA-26058758-5', 'mtgimage.com');
 			ga('send', 'pageview');
 		</script>
-		<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
+		<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
 		<link type="text/css" rel="stylesheet" href="index.css">
 		<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 		<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
@@ -188,7 +188,7 @@
 			<br>
 			The <a href="#setList">set list</a> denotes which rarities are available for which sets.<br>
 			<br>
-			Set sybmols are rendered in 'accurate' style.<br>
+			Set symbols are rendered in 'accurate' style.<br>
 			</p>
 		</div>
 		<br>
@@ -321,7 +321,7 @@
 		<h1>Missing Sets<a href="#top">(back to top)</a></h1>
 		<ul>
 			<li>Deck Builder's Toolkit Series: No known scans available</li>
-			<li>Renaissance: Non-english</li>
+			<li>Renaissance: Non-English</li>
 		</ul>
 		<br>
 		<hr>
