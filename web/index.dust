@@ -19,7 +19,7 @@
 	</head>
 	<body><a name="top"></a>
 		<center><h1 style="font-size: 240%;">MTG Image</h1></center>
-		<p style="margin-top: 1.0em;">This project provides <a href="http://www.wizards.com/Magic/">Magic the Gathering</a> card images and set and mana symbols for developers to easily use in their projects.<br>
+		<p style="margin-top: 1.0em;">This project provides <a href="http://www.wizards.com/Magic/">Magic the Gathering</a> card images and symbols for developers to easily use in their projects.<br>
 		<br>
         For more details see: <a href="#documentation">Documentation</a> and <a href="http://forums.mtgsalvation.com/showthread.php?t=561388">Discussion Thread</a><br>
         <br>
@@ -33,12 +33,17 @@
 		<br>
 		<h2 style="display: none;"><span style="color: red; text-decoration: underline;">ALERT:</span> Alert message goes here</h2>
 		<br>
-		<br>
 		<hr>
 		<a name="documentation"></a>
 		<h1>Documentation<a href="#top">(back to top)</a></h1>
+		<br>
+		Feel free to directly link (hotlink) to the images with your website or app.<br>
+		<br>
+		The images are hosted on a dedicated server with a gigabit connection and tons of bandwidth.<br>
+		<br>
+		<br>
 		<h1>Card Images</h1>
-		<p>Most images are in 480x680 resolution and come from <a href="http://www.slightlymagic.net/forum/viewforum.php?f=15">CCGHQ</a>.<br>
+		<p>Most card images are in 480x680 resolution and come from <a href="http://www.slightlymagic.net/forum/viewforum.php?f=15">CCGHQ</a>.<br>
 		<br>
 		Lower resolution images are provided until a higher resolution is available.<br>
 		<br>
@@ -51,10 +56,8 @@
 			<li>Card Names&nbsp;&nbsp;&nbsp;Supported</li>
 			<li><a href="http://mtgjson.com">MTGJSON</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Supported</li>
 			<li><a href="http://www.woogerworks.com/">Cockatrice</a>&nbsp;&nbsp;&nbsp;Supported</li>
-			<li><a href="http://www.slightlymagic.net/forum/viewforum.php?f=15">CCGHQ</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Supported<span style="color: pink; font-weight: bold;">*</span></li>
+			<li><a href="http://www.slightlymagic.net/forum/viewforum.php?f=15">CCGHQ</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Supported</li>
 		</ul>
-		<br>
-		<span style="color: pink; font-weight: bold;">*</span> A few sets are not available, see: <a href="#missing-sets">Missing Sets</a><br>
 		<br>
 		<br>
 		Images are available via <strong>3</strong> different methods:<br>
@@ -117,11 +120,6 @@
 		</div>
 		<br>
 		<br>
-		Feel free to directly link (hotlink) to the images with your website or app.<br>
-		<br>
-		The images are hosted on a dedicated server with a gigabit connection and tons of bandwidth.<br>
-		<br>
-		<br>
 		<hr>
 		<h1>Crops</h1>
 		For artwork crops instead of full cards, change the image name to end with '-crop.jpg' or '.crop.jpg' instead of '.jpg'<br>
@@ -154,7 +152,7 @@
 		<br>
 		<br>
 		<hr>
-		<h1>Mana and Set Symbols<a href="#top">(back to top)</a></h1>
+		<h1>Symbols<a href="#top">(back to top)</a></h1>
 		<p>Symbols are available in several sizes and formats.<br>
 		<br>
 		<strong>Formats</strong>: PNG, GIF, SVG<br>
@@ -174,25 +172,21 @@
 			<br>
 			<strong>Examples</strong>:</p>
 			<ul>
-				<li><a href="/symbol/set/tor/r/64.gif">Torment Rare &nbsp;&nbsp;&nbsp;64 GIF</a>&nbsp;&nbsp;&nbsp;http://mtgimage.com/symbol/set/tor/r/64.gif</li>
-				<li><a href="/symbol/set/ths/m/128.png">Theros &nbsp;Mythic 128 PNG</a>&nbsp;&nbsp;&nbsp;http://mtgimage.com/symbol/set/ths/m/128.png</li>
+				<li><a href="/symbol/set/tor/r/64.gif">Torment Rare 64 GIF</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://mtgimage.com/symbol/set/tor/r/64.gif</li>
+				<li><a href="/symbol/set/ths/m/128.png">Theros Mythic 128 PNG</a>&nbsp;&nbsp;&nbsp;&nbsp;http://mtgimage.com/symbol/set/ths/m/128.png</li>
 				<li><a href="/symbol/set/ody/c/256.png">Odyssey Common 256 PNG</a>&nbsp;&nbsp;&nbsp;http://mtgimage.com/symbol/set/ody/c/256.png</li>
 			</ul>
 			<p><br>
-			<br>
 			<strong>&nbsp;SVG Format</strong>: http://mtgimage.com/symbol/set/&lt;set code&gt;/&lt;rarity&gt;.svg<br>
 			<strong>SVG Example</strong>: <a href="/symbol/set/ice/u.svg">Ice Age Uncommon SVG</a>&nbsp;&nbsp;&nbsp;http://mtgimage.com/symbol/set/ice/u.svg<br>
 			<br>
-			<br>
 			&lt;rarity&gt; is a single letter representing the rarity: c, u, r, m, s<br>
-			<br>
 			You can also use the full rarity: common, uncommon, rare, mythic, special<br>
 			<br>
 			Use rarity 'c' for basic lands.<br>
-			<br>
 			Use rarity 's' for Time Spiral "Timeshifted" cards (TSB) and Vanguard (VAN).<br>
 			<br>
-			The <a href="#setList">set list</a> denotes which sets have which rarities.<br>
+			The <a href="#setList">set list</a> denotes which rarities are available for which sets.<br>
 			<br>
 			Set sybmols are rendered in 'accurate' style.<br>
 			</p>
@@ -211,7 +205,6 @@
 				<li><a href="/symbol/mana/uw/256.png">Blue/White 256 PNG</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://mtgimage.com/symbol/mana/uw/256.png</li>
 			</ul>
 			<p><br>
-			<br>
 			<strong>&nbsp;SVG Format</strong>: http://mtgimage.com/symbol/mana/&lt;mana code&gt;.svg<br>
 			<strong>SVG Example</strong>: <a href="/symbol/mana/2r.svg">2 Colorless/Red SVG</a>&nbsp;&nbsp;&nbsp;http://mtgimage.com/symbol/mana/2r.svg<br>
 			<br>
@@ -221,7 +214,7 @@
 			{/manaCodes}
 			<p>
 			<br>
-			You can also spell out the mana codes, such as 'green' for 'g', 'bluewhite' for 'uw', 'infinity' for '∞', etc.<br>
+			You can also spell out the mana codes, such as 'green' for 'g', 'bluewhite' for 'uw', 'infinity' for '∞', "halfwhite" for "hw", etc.<br>
 			<br>
 			You can also reverse any dual symbols, such as 'ru' for 'ur', 'r2' for '2r', etc.<br>
 			</p>
@@ -239,7 +232,6 @@
 				<li><a href="/symbol/other/q/128.png">Untap 128 PNG</a>&nbsp;&nbsp;&nbsp;http://mtgimage.com/symbol/other/q/128.png</li>
 			</ul>
 			<p><br>
-			<br>
 			<strong>&nbsp;SVG Format</strong>: http://mtgimage.com/symbol/other/&lt;code&gt;.svg<br>
 			<strong>SVG Example</strong>: <a href="/symbol/other/artifact.svg">Artifact SVG</a>&nbsp;&nbsp;&nbsp;http://mtgimage.com/symbol/other/artifact.svg<br>
 			<br>
@@ -249,15 +241,14 @@
 			{/otherCodes}
 			<p>
 			<br>
-			You can also spell out the codes, such as 'tap' for 't', 'untap' for 'q', etc.<br>
+			You can also spell out some codes, such as 'tap' for 't' and 'untap' for 'q'.<br>
 			<br>
-			The card type symbols (enchantment, instant, etc) come from Future Sight.<br>
-			The power and toughness symbols come from Portal.<br>
-			The chaosdice and planeswalk symbols come from Planechase.<br>
+			The card types (enchantment, instant, etc) come from Future Sight.<br>
+			The power and toughness come from Portal.<br>
+			The chaosdice and planeswalk come from Planechase.<br>
 			</p>
 		</div>
 		<p>
-		<br>
 		<br>
 		All symbols are generated from the SVG files found here:</p>
 		<ul>
