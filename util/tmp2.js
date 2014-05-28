@@ -16,61 +16,38 @@ var base = require("xbase"),
 	GET_SOURCES = require("./sources").GET_SOURCES,
 	tiptoe = require("tiptoe");
 
-var JSON_PATH = "/mnt/compendium/DevLab/mtgjson/json";
-var SET_PATH = "/mnt/compendium/DevLab/mtgimage/web/actual/set";
+process.exit(1);
+var SET_PATH = "/mnt/compendium/DevLab/mtgimage/web/symbol/set";
 
-C.SETS.serialForEach(function(SET, subcb)
-{
-	checkSet(SET.code, subcb);
-}, function(err)
-{
-	if(err)
+C.SETS.serialForEach(makeSetSymlinks,
+	function finish(err)
 	{
-		base.error(err);
-		process.exit(1);
+		if(err)
+		{
+			base.error(err);
+			process.exit(1);
+		}
+
+		process.exit(0);
 	}
+);
 
-	process.exit(0);
-});
-
-function checkSet(setCode, cb)
+function makeSetSymlinks(SET, cb)
 {
-	var SETDATA = C.SETS.filter(function(SET) { return SET.code.toLowerCase()===setCode.toLowerCase(); })[0];
-
 	tiptoe(
-		function loadJSON()
+		function makeLinks()
 		{
-			fs.readFile(path.join(JSON_PATH, setCode + ".json"), {encoding : "utf8"}, this);
+			if(SET.hasOwnProperty("oldCode"))
+				fs.symlink(SET.code.toLowerCase(), path.join(SET_PATH, SET.oldCode.toLowerCase()), this.parallel());
+			
+			if(SET.hasOwnProperty("gathererCode"))
+				fs.symlink(SET.code.toLowerCase(), path.join(SET_PATH, SET.gathererCode.toLowerCase()), this.parallel());
+
+			this.parallel()();
 		},
-		function processCards(err, setJSON)
+		function returnResult()
 		{
-			if(err)
-			{
-				setImmediate(function() { cb(err); });
-				return;
-			}
-
-			var set = JSON.parse(setJSON);
-			set.cards.serialForEach(function(card, subcb)
-			{
-				if(card.layout!=="plane")
-					return setImmediate(subcb);
-
-				var imagePath = path.join(SET_PATH, setCode.toLowerCase(), card.imageName + ".jpg");
-				//base.info(imagePath);
-				tiptoe(
-					function getSize()
-					{
-						imageUtil.getWidthHeight(imagePath, this);
-					},
-					function continueAlong(err, size)
-					{
-						base.info(size);
-
-						setImmediate(subcb);
-					}
-				);
-			}, cb);
+			setImmediate(cb);
 		}
 	);
 }

@@ -19,8 +19,8 @@ var dustData =
 {
 	title : "Magic the Gathering card images",
 	sets  : [],
-	version : "4.5.0",
-	lastUpdated : "May 13, 2014"
+	version : "5.0.0",
+	lastUpdated : "May 28, 2014"
 };
 
 var ACTUAL_PATH = path.join(__dirname, "actual");
@@ -73,6 +73,8 @@ var EXTRA_MULTIVERSEID_SYMLINKS =
 };
 
 var VALID_SETS = C.SETS.filter(function(SET) { return !C.SETS_WITH_NO_IMAGES.contains(SET.code); });
+var setSymbols = {};
+var SET_SYMBOL_PATH = path.join(__dirname, "actual", "symbol", "set");
 
 tiptoe(
 	function reset()
@@ -156,6 +158,28 @@ tiptoe(
 			fs.symlink(path.join("..", "set", setCode), path.join(SETNAME_PATH, setName), this.parallel());
 		}.bind(this));
 	},
+	function getSetSymbols()
+	{
+		base.info("Checking for set symbols...");
+
+		VALID_SETS.forEach(function(SET)
+		{
+			setSymbols[SET.code] = "";
+			Object.keys(C.SYMBOL_RARITIES).forEach(function(RARITY_LETTER)
+			{
+				if(fs.existsSync(path.join(SET_SYMBOL_PATH, SET.code.toLowerCase(), RARITY_LETTER + ".svg")))
+				{
+					if(setSymbols[SET.code])
+						setSymbols[SET.code] += " ";
+					setSymbols[SET.code] += RARITY_LETTER;
+				}
+			});
+			if(!setSymbols[SET.code])
+				setSymbols[SET.code] = "None";
+		});
+
+		this();
+	},
 	function countImages()
 	{
 		base.info("Counting images...");
@@ -169,24 +193,15 @@ tiptoe(
 	{
 		var args=arguments;
 
+		dustData.symbolSizes = C.SYMBOL_SIZES.join(", ");
+		dustData.manaCodes = Object.keys(C.SYMBOL_MANA).map(function(MANA_SYMBOL) { if(Number.isNumber(MANA_SYMBOL[0])) { return {code : MANA_SYMBOL, className : C.SYMBOL_MANA[MANA_SYMBOL][0]}; } else { return {code : MANA_SYMBOL, className : MANA_SYMBOL}; } });
+		dustData.otherCodes = Object.keys(C.SYMBOL_OTHER).map(function(OTHER_SYMBOL) { if(Number.isNumber(OTHER_SYMBOL[0])) { return {code : OTHER_SYMBOL, className : C.SYMBOL_OTHER[OTHER_SYMBOL][0]}; } else { return {code : OTHER_SYMBOL, className : OTHER_SYMBOL}; } });
+
 		VALID_SETS.serialForEach(function(SET, subcb, i)
 		{
 			base.info("Getting width/heights for: %s", SET.name);
+			dustData.sets.push({code : SET.code, name : SET.name, releaseDate : SET.releaseDate, setSymbols : setSymbols[SET.code]});
 			getWidthHeights(args[i].filter(function(a) { return !a.endsWith(".crop.jpg") && !a.endsWith(".hq.jpg"); }), subcb);
-          
-			/*var zipSize = printUtil.toSize(fs.statSync(path.join(__dirname, "zip", SET.code + ".zip")).size, 0);
-            zipSize = "&nbsp;".repeat(6-zipSize.length) + zipSize;*/
-
-			/*var zips = [];
-			["ccghq", "mtgjson"].forEach(function(zipType)
-			{
-				var zipSize = printUtil.toSize(fs.statSync(path.join(__dirname, "zip", SET.code + "-" + zipType + ".zip")).size, 0);
-				zipSize = "&nbsp;".repeat(6-zipSize.length) + zipSize;
-
-				zips.push({zipType : zipType, zipCode : SET.code, zipSize : zipSize});
-			});*/
-
-			dustData.sets.push({code : SET.code, name : SET.name, releaseDate : SET.releaseDate});
 		}, this);
 
 	},

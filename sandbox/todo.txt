@@ -1,6 +1,7 @@
 /---------------\
 | High Priority |
 \---------------/
+* After all symbols up online, make posts to both MTGIMAGE and MTGJSON threads (reply to the MTGJSON thread) and also the threads with the symbols too
 
 
 /-----------------\
@@ -11,8 +12,6 @@
 /----------------\
 | Lower Priority |
 \----------------/
-* Add symbols: http://www.mediafire.com/folder/92vnddvuu7ian/BaconCatBug's_SVG_Expansion_Symbol_Pack
-
 * Consider providing zip files again. Maybe one for each formatted card names (so a ccghq zip, cockatrice, mtgjson, etc)
   util/create_zips.js already has this functionality, but because cockatrice doesn't have set codes, it doesn't support that yet
   and because CCGHQ differs from MTGJSON set codes (PO2 vs P02) then that doesn't work 100% right either

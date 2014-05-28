@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!--[if IE]><![endif]-->
+<html>
+	<head>
+		<title>set symbol comparison</title>
+		<style>
+			body
+			{
+				text-align: left;
+				padding-left: 2.0em;
+			}
+
+
+
+			img
+			{
+				margin: 0 25px;
+			}
+		</style>
+	</head>
+	<body>
+		{#sets}
+			<div>
+				<h1>{name} ({code})</h1>
+				<img height="400" src="http://dev.mtgimage.com/set/{code}/{imageName}.jpg">
+				{#rarities}				
+					<img src="http://dev.mtgimage.com/symbols/set/{code}/{.}/128.png">
+				{/rarities}
+			</div>
+			<hr>
+		{/sets}
+	</body>
+</html>

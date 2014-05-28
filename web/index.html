@@ -19,7 +19,7 @@
 	</head>
 	<body><a name="top"></a>
 		<center><h1 style="font-size: 240%;">MTG Image</h1></center>
-		<p style="margin-top: 1.0em;">This project provides <a href="http://www.wizards.com/Magic/">Magic the Gathering</a> card images for developers to easily use in their projects.<br>
+		<p style="margin-top: 1.0em;">This project provides <a href="http://www.wizards.com/Magic/">Magic the Gathering</a> card images and set and mana symbols for developers to easily use in their projects.<br>
 		<br>
         For more details see: <a href="#documentation">Documentation</a> and <a href="http://forums.mtgsalvation.com/showthread.php?t=561388">Discussion Thread</a><br>
         <br>
@@ -27,8 +27,8 @@
 		</p>
 		<br>
 		<br>
-		<h2>Current Version: <span class="value">4.5.0</span></h2>
-		<h2>&nbsp;&nbsp;&nbsp;Last Updated: <span class="value">May 13, 2014</span><a href="#changeLog">(change log)</a></h2>
+		<h2>Current Version: <span class="value">5.0.0</span></h2>
+		<h2>&nbsp;&nbsp;&nbsp;Last Updated: <span class="value">May 28, 2014</span><a href="#changeLog">(change log)</a></h2>
 		<br>
 		<br>
 		<h2 style="display: none;"><span style="color: red; text-decoration: underline;">ALERT:</span> Alert message goes here</h2>
@@ -37,6 +37,7 @@
 		<hr>
 		<a name="documentation"></a>
 		<h1>Documentation<a href="#top">(back to top)</a></h1>
+		<h1>Card Images</h1>
 		<p>Most images are in 480x680 resolution and come from <a href="http://www.slightlymagic.net/forum/viewforum.php?f=15">CCGHQ</a>.<br>
 		<br>
 		Lower resolution images are provided until a higher resolution is available.<br>
@@ -143,7 +144,7 @@
 		<hr>
 		<a name="imageCompression"></a>
 		<h1>Image Compression</h1>
-		The images have been compressed a bit to save on bandwidth.<br>
+		The card images have been compressed a bit to save on bandwidth.<br>
 		<br>
 		If you want to access the full quality, uncompressed image, change the image name to end with '.hq.jpg' instead of '.jpg'<br>
 		<br>
@@ -154,9 +155,257 @@
 		<br>
 		<hr>
 		<h1>Mana and Set Symbols<a href="#top">(back to top)</a></h1>
-		<p>If you are looking for symbols, I don't provide those here.<br>
+		<p>Symbols are available in several sizes and formats.<br>
 		<br>
-		However there are two really great resources available for them here:<br>
+		<strong>Formats</strong>: PNG, GIF, SVG<br>
+		<br>
+		<strong>Sizes</strong>: 8, 16, 24, 32, 48, 64, 96, 128, 256, 512, 768, 1024<br>
+		<br>
+		Each size is the maximum width or height of the symbol image (eg 32x27 or 127x128).<br>
+		<br>
+		URLs are case insensitive.<br>
+		</p>
+		<br>
+		<br>
+		<div class="code">
+			<h2>Set Symbols</h2>
+			<p><br>
+			<strong>Format</strong>: http://mtgimage.com/symbol/set/&lt;set code&gt;/&lt;rarity&gt;/&lt;size&gt;.&lt;format&gt;<br>
+			<br>
+			<strong>Examples</strong>:</p>
+			<ul>
+				<li><a href="/symbol/set/tor/r/64.gif">Torment Rare &nbsp;&nbsp;&nbsp;64 GIF</a>&nbsp;&nbsp;&nbsp;http://mtgimage.com/symbol/set/tor/r/64.gif</li>
+				<li><a href="/symbol/set/ths/m/128.png">Theros &nbsp;Mythic 128 PNG</a>&nbsp;&nbsp;&nbsp;http://mtgimage.com/symbol/set/ths/m/128.png</li>
+				<li><a href="/symbol/set/ody/c/256.png">Odyssey Common 256 PNG</a>&nbsp;&nbsp;&nbsp;http://mtgimage.com/symbol/set/ody/c/256.png</li>
+			</ul>
+			<p><br>
+			<br>
+			<strong>&nbsp;SVG Format</strong>: http://mtgimage.com/symbol/set/&lt;set code&gt;/&lt;rarity&gt;.svg<br>
+			<strong>SVG Example</strong>: <a href="/symbol/set/ice/u.svg">Ice Age Uncommon SVG</a>&nbsp;&nbsp;&nbsp;http://mtgimage.com/symbol/set/ice/u.svg<br>
+			<br>
+			<br>
+			&lt;rarity&gt; is a single letter representing the rarity: c, u, r, m, s<br>
+			<br>
+			You can also use the full rarity: common, uncommon, rare, mythic, special<br>
+			<br>
+			Use rarity 'c' for basic lands.<br>
+			<br>
+			Use rarity 's' for Time Spiral "Timeshifted" cards (TSB) and Vanguard (VAN).<br>
+			<br>
+			The <a href="#setList">set list</a> denotes which sets have which rarities.<br>
+			<br>
+			Set sybmols are rendered in 'accurate' style.<br>
+			</p>
+		</div>
+		<br>
+		<br>
+		<div class="code symbolsSection" id="manaSymbolsSection">
+			<h2>Mana Symbols</h2>
+			<p><br>
+			<strong>Format</strong>: http://mtgimage.com/symbol/mana/&lt;mana code&gt;/&lt;size&gt;.&lt;format&gt;<br>
+			<br>
+			<strong>Examples</strong>:</p>
+			<ul>
+				<li><a href="/symbol/mana/g/64.gif">Green 64 GIF</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://mtgimage.com/symbol/mana/g/64.gif</li>
+				<li><a href="/symbol/mana/10/128.png">10 Colorless 128 PNG</a>&nbsp;&nbsp;&nbsp;http://mtgimage.com/symbol/mana/10/128.png</li>
+				<li><a href="/symbol/mana/uw/256.png">Blue/White 256 PNG</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://mtgimage.com/symbol/mana/uw/256.png</li>
+			</ul>
+			<p><br>
+			<br>
+			<strong>&nbsp;SVG Format</strong>: http://mtgimage.com/symbol/mana/&lt;mana code&gt;.svg<br>
+			<strong>SVG Example</strong>: <a href="/symbol/mana/2r.svg">2 Colorless/Red SVG</a>&nbsp;&nbsp;&nbsp;http://mtgimage.com/symbol/mana/2r.svg<br>
+			<br>
+			The following mana codes are available:</p>
+			
+				<div class="symbol">0<br><div class="zero">&nbsp;</div></div>
+			
+				<div class="symbol">1<br><div class="one">&nbsp;</div></div>
+			
+				<div class="symbol">2<br><div class="two">&nbsp;</div></div>
+			
+				<div class="symbol">3<br><div class="three">&nbsp;</div></div>
+			
+				<div class="symbol">4<br><div class="four">&nbsp;</div></div>
+			
+				<div class="symbol">5<br><div class="five">&nbsp;</div></div>
+			
+				<div class="symbol">6<br><div class="six">&nbsp;</div></div>
+			
+				<div class="symbol">7<br><div class="seven">&nbsp;</div></div>
+			
+				<div class="symbol">8<br><div class="eight">&nbsp;</div></div>
+			
+				<div class="symbol">9<br><div class="nine">&nbsp;</div></div>
+			
+				<div class="symbol">10<br><div class="ten">&nbsp;</div></div>
+			
+				<div class="symbol">11<br><div class="eleven">&nbsp;</div></div>
+			
+				<div class="symbol">12<br><div class="twelve">&nbsp;</div></div>
+			
+				<div class="symbol">13<br><div class="thirteen">&nbsp;</div></div>
+			
+				<div class="symbol">14<br><div class="fourteen">&nbsp;</div></div>
+			
+				<div class="symbol">15<br><div class="fifteen">&nbsp;</div></div>
+			
+				<div class="symbol">16<br><div class="sixteen">&nbsp;</div></div>
+			
+				<div class="symbol">17<br><div class="seventeen">&nbsp;</div></div>
+			
+				<div class="symbol">18<br><div class="eighteen">&nbsp;</div></div>
+			
+				<div class="symbol">19<br><div class="nineteen">&nbsp;</div></div>
+			
+				<div class="symbol">20<br><div class="twenty">&nbsp;</div></div>
+			
+				<div class="symbol">100<br><div class="onehundred">&nbsp;</div></div>
+			
+				<div class="symbol">1000000<br><div class="onemillion">&nbsp;</div></div>
+			
+				<div class="symbol">w<br><div class="w">&nbsp;</div></div>
+			
+				<div class="symbol">u<br><div class="u">&nbsp;</div></div>
+			
+				<div class="symbol">b<br><div class="b">&nbsp;</div></div>
+			
+				<div class="symbol">r<br><div class="r">&nbsp;</div></div>
+			
+				<div class="symbol">g<br><div class="g">&nbsp;</div></div>
+			
+				<div class="symbol">s<br><div class="s">&nbsp;</div></div>
+			
+				<div class="symbol">x<br><div class="x">&nbsp;</div></div>
+			
+				<div class="symbol">y<br><div class="y">&nbsp;</div></div>
+			
+				<div class="symbol">z<br><div class="z">&nbsp;</div></div>
+			
+				<div class="symbol">wu<br><div class="wu">&nbsp;</div></div>
+			
+				<div class="symbol">wb<br><div class="wb">&nbsp;</div></div>
+			
+				<div class="symbol">ub<br><div class="ub">&nbsp;</div></div>
+			
+				<div class="symbol">ur<br><div class="ur">&nbsp;</div></div>
+			
+				<div class="symbol">br<br><div class="br">&nbsp;</div></div>
+			
+				<div class="symbol">bg<br><div class="bg">&nbsp;</div></div>
+			
+				<div class="symbol">rg<br><div class="rg">&nbsp;</div></div>
+			
+				<div class="symbol">rw<br><div class="rw">&nbsp;</div></div>
+			
+				<div class="symbol">gw<br><div class="gw">&nbsp;</div></div>
+			
+				<div class="symbol">gu<br><div class="gu">&nbsp;</div></div>
+			
+				<div class="symbol">2w<br><div class="twowhite">&nbsp;</div></div>
+			
+				<div class="symbol">2u<br><div class="twoblue">&nbsp;</div></div>
+			
+				<div class="symbol">2b<br><div class="twoblack">&nbsp;</div></div>
+			
+				<div class="symbol">2r<br><div class="twored">&nbsp;</div></div>
+			
+				<div class="symbol">2g<br><div class="twogreen">&nbsp;</div></div>
+			
+				<div class="symbol">p<br><div class="p">&nbsp;</div></div>
+			
+				<div class="symbol">pw<br><div class="pw">&nbsp;</div></div>
+			
+				<div class="symbol">pu<br><div class="pu">&nbsp;</div></div>
+			
+				<div class="symbol">pb<br><div class="pb">&nbsp;</div></div>
+			
+				<div class="symbol">pr<br><div class="pr">&nbsp;</div></div>
+			
+				<div class="symbol">pg<br><div class="pg">&nbsp;</div></div>
+			
+				<div class="symbol">∞<br><div class="∞">&nbsp;</div></div>
+			
+				<div class="symbol">h<br><div class="h">&nbsp;</div></div>
+			
+				<div class="symbol">hw<br><div class="hw">&nbsp;</div></div>
+			
+				<div class="symbol">hu<br><div class="hu">&nbsp;</div></div>
+			
+				<div class="symbol">hb<br><div class="hb">&nbsp;</div></div>
+			
+				<div class="symbol">hr<br><div class="hr">&nbsp;</div></div>
+			
+				<div class="symbol">hg<br><div class="hg">&nbsp;</div></div>
+			
+			<p>
+			<br>
+			You can also spell out the mana codes, such as 'green' for 'g', 'bluewhite' for 'uw', 'infinity' for '∞', etc.<br>
+			<br>
+			You can also reverse any dual symbols, such as 'ru' for 'ur', 'r2' for '2r', etc.<br>
+			</p>
+		</div>
+		<br>
+		<br>
+		<div class="code symbolsSection" id="otherSymbolsSection">
+			<h2>Other Symbols</h2>
+			<p><br>
+			<strong>Format</strong>: http://mtgimage.com/symbol/other/&lt;code&gt;/&lt;size&gt;.&lt;format&gt;<br>
+			<br>
+			<strong>Examples</strong>:</p>
+			<ul>
+				<li><a href="/symbol/other/t/64.gif">Tap 64 GIF</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://mtgimage.com/symbol/other/t/64.gif</li>
+				<li><a href="/symbol/other/q/128.png">Untap 128 PNG</a>&nbsp;&nbsp;&nbsp;http://mtgimage.com/symbol/other/q/128.png</li>
+			</ul>
+			<p><br>
+			<br>
+			<strong>&nbsp;SVG Format</strong>: http://mtgimage.com/symbol/other/&lt;code&gt;.svg<br>
+			<strong>SVG Example</strong>: <a href="/symbol/other/artifact.svg">Artifact SVG</a>&nbsp;&nbsp;&nbsp;http://mtgimage.com/symbol/other/artifact.svg<br>
+			<br>
+			The following codes are available:</p>
+			
+				<div class="symbol">t<br><div class="t">&nbsp;</div></div>
+			
+				<div class="symbol">q<br><div class="q">&nbsp;</div></div>
+			
+				<div class="symbol">artifact<br><div class="artifact">&nbsp;</div></div>
+			
+				<div class="symbol">creature<br><div class="creature">&nbsp;</div></div>
+			
+				<div class="symbol">enchantment<br><div class="enchantment">&nbsp;</div></div>
+			
+				<div class="symbol">instant<br><div class="instant">&nbsp;</div></div>
+			
+				<div class="symbol">land<br><div class="land">&nbsp;</div></div>
+			
+				<div class="symbol">multiple<br><div class="multiple">&nbsp;</div></div>
+			
+				<div class="symbol">planeswalker<br><div class="planeswalker">&nbsp;</div></div>
+			
+				<div class="symbol">sorcery<br><div class="sorcery">&nbsp;</div></div>
+			
+				<div class="symbol">power<br><div class="power">&nbsp;</div></div>
+			
+				<div class="symbol">toughness<br><div class="toughness">&nbsp;</div></div>
+			
+				<div class="symbol">chaosdice<br><div class="chaosdice">&nbsp;</div></div>
+			
+				<div class="symbol">planeswalk<br><div class="planeswalk">&nbsp;</div></div>
+			
+				<div class="symbol">forwardslash<br><div class="forwardslash">&nbsp;</div></div>
+			
+			<p>
+			<br>
+			You can also spell out the codes, such as 'tap' for 't', 'untap' for 'q', etc.<br>
+			<br>
+			The card type symbols (enchantment, instant, etc) come from Future Sight.<br>
+			The power and toughness symbols come from Portal.<br>
+			The chaosdice and planeswalk symbols come from Planechase.<br>
+			</p>
+		</div>
+		<p>
+		<br>
+		<br>
+		All symbols are generated from the SVG files found here:</p>
 		<ul>
 			<li><a href="http://www.mtgsalvation.com/forums/creativity/artwork/494438-baconcatbugs-set-and-mana-symbol-megapack">BaconCatBug's Set and Mana Symbol Megapack</a></li>
 			<li><a href="http://www.slightlymagic.net/forum/viewtopic.php?f=15&t=7010">Vector Set Symbols and Watermarks</a></li>
@@ -175,6 +424,15 @@
 				</tr>
 			</thead>
 			<tbody><tr>
+	<td>5.0.0</td>
+	<td>May 28, 2014</td>
+	<td>
+		<ul>
+			<li>Added set symbols, mana symbols and other symbols.</li>
+		</ul>
+	</td>
+</tr>
+<tr>
 	<td>4.5.0</td>
 	<td>May 13, 2014</td>
 	<td>
@@ -418,6 +676,7 @@
 					<th>Code</th>
 					<th>Release Date</th>
 					<th>Resolution</th>
+					<th>Symbols</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -427,6 +686,7 @@
 						<td>LEA</td>
 						<td>1993-08-05</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -434,6 +694,7 @@
 						<td>LEB</td>
 						<td>1993-10-01</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -441,6 +702,7 @@
 						<td>2ED</td>
 						<td>1993-12-01</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -448,6 +710,7 @@
 						<td>ARN</td>
 						<td>1993-12-01</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -455,6 +718,7 @@
 						<td>ATQ</td>
 						<td>1994-03-01</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -462,6 +726,7 @@
 						<td>3ED</td>
 						<td>1994-04-01</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -469,6 +734,7 @@
 						<td>LEG</td>
 						<td>1994-06-01</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -476,6 +742,7 @@
 						<td>PPR</td>
 						<td>1994-07-01</td>
 						<td>480x680<br>960x680</td>
+						<td>c u r s</td>
 					</tr>
 				
 					<tr>
@@ -483,6 +750,7 @@
 						<td>DRK</td>
 						<td>1994-08-01</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -490,6 +758,7 @@
 						<td>FEM</td>
 						<td>1994-11-01</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -497,6 +766,7 @@
 						<td>4ED</td>
 						<td>1995-04-01</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -504,6 +774,7 @@
 						<td>ICE</td>
 						<td>1995-06-01</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -511,6 +782,7 @@
 						<td>CHR</td>
 						<td>1995-07-01</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -518,6 +790,7 @@
 						<td>HML</td>
 						<td>1995-10-01</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -525,6 +798,7 @@
 						<td>ALL</td>
 						<td>1996-06-10</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -532,6 +806,7 @@
 						<td>RQS</td>
 						<td>1996-07-01</td>
 						<td>480x680</td>
+						<td>None</td>
 					</tr>
 				
 					<tr>
@@ -539,6 +814,7 @@
 						<td>MIR</td>
 						<td>1996-10-08</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -546,6 +822,7 @@
 						<td>ITP</td>
 						<td>1996-12-31</td>
 						<td>480x680</td>
+						<td>None</td>
 					</tr>
 				
 					<tr>
@@ -553,6 +830,7 @@
 						<td>VIS</td>
 						<td>1997-02-03</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -560,6 +838,7 @@
 						<td>5ED</td>
 						<td>1997-03-24</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -567,6 +846,7 @@
 						<td>VAN</td>
 						<td>1997-05-01</td>
 						<td>480x680</td>
+						<td>s</td>
 					</tr>
 				
 					<tr>
@@ -574,6 +854,7 @@
 						<td>POR</td>
 						<td>1997-05-01</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -581,6 +862,7 @@
 						<td>WTH</td>
 						<td>1997-06-09</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -588,6 +870,7 @@
 						<td>TMP</td>
 						<td>1997-10-14</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -595,6 +878,7 @@
 						<td>STH</td>
 						<td>1998-03-02</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -602,6 +886,7 @@
 						<td>PO2</td>
 						<td>1998-06-01</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -609,6 +894,7 @@
 						<td>EXO</td>
 						<td>1998-06-15</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -616,6 +902,7 @@
 						<td>UGL</td>
 						<td>1998-08-11</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -623,6 +910,7 @@
 						<td>USG</td>
 						<td>1998-10-12</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -630,6 +918,7 @@
 						<td>ATH</td>
 						<td>1998-11-01</td>
 						<td>480x680</td>
+						<td>c u r s</td>
 					</tr>
 				
 					<tr>
@@ -637,6 +926,7 @@
 						<td>ULG</td>
 						<td>1999-02-15</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -644,6 +934,7 @@
 						<td>6ED</td>
 						<td>1999-04-21</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -651,6 +942,7 @@
 						<td>PTK</td>
 						<td>1999-05-01</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -658,6 +950,7 @@
 						<td>UDS</td>
 						<td>1999-06-07</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -665,6 +958,7 @@
 						<td>S99</td>
 						<td>1999-07-01</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -672,6 +966,7 @@
 						<td>MMQ</td>
 						<td>1999-10-04</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -679,6 +974,7 @@
 						<td>BRB</td>
 						<td>1999-11-12</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -686,6 +982,7 @@
 						<td>NMS</td>
 						<td>2000-02-14</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -693,6 +990,7 @@
 						<td>S00</td>
 						<td>2000-04-01</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -700,6 +998,7 @@
 						<td>PCY</td>
 						<td>2000-06-05</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -707,6 +1006,7 @@
 						<td>BTD</td>
 						<td>2000-10-01</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -714,6 +1014,7 @@
 						<td>INV</td>
 						<td>2000-10-02</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -721,6 +1022,7 @@
 						<td>PLS</td>
 						<td>2001-02-05</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -728,6 +1030,7 @@
 						<td>7ED</td>
 						<td>2001-04-11</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -735,6 +1038,7 @@
 						<td>APC</td>
 						<td>2001-06-04</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -742,6 +1046,7 @@
 						<td>ODY</td>
 						<td>2001-10-01</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -749,6 +1054,7 @@
 						<td>DKM</td>
 						<td>2001-12-01</td>
 						<td>480x680</td>
+						<td>c u r s</td>
 					</tr>
 				
 					<tr>
@@ -756,6 +1062,7 @@
 						<td>TOR</td>
 						<td>2002-02-04</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -763,6 +1070,7 @@
 						<td>JUD</td>
 						<td>2002-05-27</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -770,6 +1078,7 @@
 						<td>ONS</td>
 						<td>2002-10-07</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -777,6 +1086,7 @@
 						<td>LGN</td>
 						<td>2003-02-03</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -784,6 +1094,7 @@
 						<td>SCG</td>
 						<td>2003-05-26</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -791,6 +1102,7 @@
 						<td>8ED</td>
 						<td>2003-07-28</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -798,6 +1110,7 @@
 						<td>MRD</td>
 						<td>2003-10-02</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -805,6 +1118,7 @@
 						<td>DST</td>
 						<td>2004-02-06</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -812,6 +1126,7 @@
 						<td>5DN</td>
 						<td>2004-06-04</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -819,6 +1134,7 @@
 						<td>CHK</td>
 						<td>2004-10-01</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -826,6 +1142,7 @@
 						<td>UNH</td>
 						<td>2004-11-20</td>
 						<td>480x680</td>
+						<td>c u r s</td>
 					</tr>
 				
 					<tr>
@@ -833,6 +1150,7 @@
 						<td>BOK</td>
 						<td>2005-02-04</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -840,6 +1158,7 @@
 						<td>SOK</td>
 						<td>2005-06-03</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -847,6 +1166,7 @@
 						<td>9ED</td>
 						<td>2005-07-29</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -854,6 +1174,7 @@
 						<td>RAV</td>
 						<td>2005-10-07</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -861,6 +1182,7 @@
 						<td>GPT</td>
 						<td>2006-02-03</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -868,6 +1190,7 @@
 						<td>DIS</td>
 						<td>2006-05-05</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -875,6 +1198,7 @@
 						<td>CSP</td>
 						<td>2006-07-21</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -882,6 +1206,7 @@
 						<td>TSP</td>
 						<td>2006-10-06</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -889,6 +1214,7 @@
 						<td>TSB</td>
 						<td>2006-10-06</td>
 						<td>480x680</td>
+						<td>s</td>
 					</tr>
 				
 					<tr>
@@ -896,6 +1222,7 @@
 						<td>HHO</td>
 						<td>2006-12-25</td>
 						<td>480x680<br>312x445</td>
+						<td>c u r m s</td>
 					</tr>
 				
 					<tr>
@@ -903,6 +1230,7 @@
 						<td>PLC</td>
 						<td>2007-02-02</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -910,6 +1238,7 @@
 						<td>FUT</td>
 						<td>2007-05-04</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -917,6 +1246,7 @@
 						<td>10E</td>
 						<td>2007-07-13</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -924,6 +1254,7 @@
 						<td>MED</td>
 						<td>2007-09-10</td>
 						<td>298x431</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -931,6 +1262,7 @@
 						<td>LRW</td>
 						<td>2007-10-12</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -938,6 +1270,7 @@
 						<td>EVG</td>
 						<td>2007-11-16</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -945,6 +1278,7 @@
 						<td>MOR</td>
 						<td>2008-02-01</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -952,6 +1286,7 @@
 						<td>SHM</td>
 						<td>2008-05-02</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -959,6 +1294,7 @@
 						<td>EVE</td>
 						<td>2008-07-25</td>
 						<td>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -966,6 +1302,7 @@
 						<td>DRB</td>
 						<td>2008-08-29</td>
 						<td>480x680</td>
+						<td>c u r m</td>
 					</tr>
 				
 					<tr>
@@ -973,6 +1310,7 @@
 						<td>ME2</td>
 						<td>2008-09-22</td>
 						<td>298x431</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -980,6 +1318,7 @@
 						<td>ALA</td>
 						<td>2008-10-03</td>
 						<td>480x680</td>
+						<td>c u r m</td>
 					</tr>
 				
 					<tr>
@@ -987,6 +1326,7 @@
 						<td>DD2</td>
 						<td>2008-11-07</td>
 						<td>480x680</td>
+						<td>c u r m</td>
 					</tr>
 				
 					<tr>
@@ -994,6 +1334,7 @@
 						<td>CON</td>
 						<td>2009-02-06</td>
 						<td>480x680</td>
+						<td>c u r m</td>
 					</tr>
 				
 					<tr>
@@ -1001,6 +1342,7 @@
 						<td>DDC</td>
 						<td>2009-04-10</td>
 						<td>480x680</td>
+						<td>c u r m</td>
 					</tr>
 				
 					<tr>
@@ -1008,6 +1350,7 @@
 						<td>ARB</td>
 						<td>2009-04-30</td>
 						<td>480x680</td>
+						<td>c u r m</td>
 					</tr>
 				
 					<tr>
@@ -1015,6 +1358,7 @@
 						<td>M10</td>
 						<td>2009-07-17</td>
 						<td>480x680</td>
+						<td>c u r m</td>
 					</tr>
 				
 					<tr>
@@ -1022,6 +1366,7 @@
 						<td>V09</td>
 						<td>2009-08-28</td>
 						<td>480x680</td>
+						<td>c u r m</td>
 					</tr>
 				
 					<tr>
@@ -1029,6 +1374,7 @@
 						<td>HOP</td>
 						<td>2009-09-04</td>
 						<td>480x680<br>1490x1040</td>
+						<td>c u r s</td>
 					</tr>
 				
 					<tr>
@@ -1036,6 +1382,7 @@
 						<td>ME3</td>
 						<td>2009-09-07</td>
 						<td>298x431</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -1043,6 +1390,7 @@
 						<td>ZEN</td>
 						<td>2009-10-02</td>
 						<td>480x680</td>
+						<td>c u r m</td>
 					</tr>
 				
 					<tr>
@@ -1050,6 +1398,7 @@
 						<td>DDD</td>
 						<td>2009-10-30</td>
 						<td>480x680</td>
+						<td>c u r m</td>
 					</tr>
 				
 					<tr>
@@ -1057,6 +1406,7 @@
 						<td>H09</td>
 						<td>2009-11-20</td>
 						<td>480x680</td>
+						<td>c u r m</td>
 					</tr>
 				
 					<tr>
@@ -1064,6 +1414,7 @@
 						<td>WWK</td>
 						<td>2010-02-05</td>
 						<td>480x680</td>
+						<td>c u r m</td>
 					</tr>
 				
 					<tr>
@@ -1071,6 +1422,7 @@
 						<td>DDE</td>
 						<td>2010-03-19</td>
 						<td>480x680</td>
+						<td>c u r m</td>
 					</tr>
 				
 					<tr>
@@ -1078,6 +1430,7 @@
 						<td>ROE</td>
 						<td>2010-04-23</td>
 						<td>480x680</td>
+						<td>c u r m</td>
 					</tr>
 				
 					<tr>
@@ -1085,6 +1438,7 @@
 						<td>DPA</td>
 						<td>2010-06-04</td>
 						<td>480x680</td>
+						<td>c u r s</td>
 					</tr>
 				
 					<tr>
@@ -1092,6 +1446,7 @@
 						<td>ARC</td>
 						<td>2010-06-18</td>
 						<td>680x960<br>480x680</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -1099,6 +1454,7 @@
 						<td>M11</td>
 						<td>2010-07-16</td>
 						<td>480x680</td>
+						<td>c u r m</td>
 					</tr>
 				
 					<tr>
@@ -1106,6 +1462,7 @@
 						<td>V10</td>
 						<td>2010-08-27</td>
 						<td>480x680</td>
+						<td>c u r m</td>
 					</tr>
 				
 					<tr>
@@ -1113,6 +1470,7 @@
 						<td>DDF</td>
 						<td>2010-09-03</td>
 						<td>480x680</td>
+						<td>c u r m</td>
 					</tr>
 				
 					<tr>
@@ -1120,6 +1478,7 @@
 						<td>SOM</td>
 						<td>2010-10-01</td>
 						<td>480x680</td>
+						<td>c u r m</td>
 					</tr>
 				
 					<tr>
@@ -1127,6 +1486,7 @@
 						<td>PD2</td>
 						<td>2010-11-19</td>
 						<td>480x680</td>
+						<td>c u r m</td>
 					</tr>
 				
 					<tr>
@@ -1134,6 +1494,7 @@
 						<td>ME4</td>
 						<td>2011-01-10</td>
 						<td>298x431</td>
+						<td>c u r</td>
 					</tr>
 				
 					<tr>
@@ -1141,6 +1502,7 @@
 						<td>MBS</td>
 						<td>2011-02-04</td>
 						<td>480x680</td>
+						<td>c u r m</td>
 					</tr>
 				
 					<tr>
@@ -1148,6 +1510,7 @@
 						<td>DDG</td>
 						<td>2011-04-01</td>
 						<td>480x680</td>
+						<td>c u r m</td>
 					</tr>
 				
 					<tr>
@@ -1155,6 +1518,7 @@
 						<td>NPH</td>
 						<td>2011-05-13</td>
 						<td>480x680</td>
+						<td>c u r m</td>
 					</tr>
 				
 					<tr>
@@ -1162,6 +1526,7 @@
 						<td>CMD</td>
 						<td>2011-06-17</td>
 						<td>480x680</td>
+						<td>c u r m</td>
 					</tr>
 				
 					<tr>
@@ -1169,6 +1534,7 @@
 						<td>M12</td>
 						<td>2011-07-15</td>
 						<td>480x680</td>
+						<td>c u r m</td>
 					</tr>
 				
 					<tr>
@@ -1176,6 +1542,7 @@
 						<td>V11</td>
 						<td>2011-08-26</td>
 						<td>480x680</td>
+						<td>c u r m</td>
 					</tr>
 				
 					<tr>
@@ -1183,6 +1550,7 @@
 						<td>DDH</td>
 						<td>2011-09-02</td>
 						<td>480x680</td>
+						<td>c u r m</td>
 					</tr>
 				
 					<tr>
@@ -1190,6 +1558,7 @@
 						<td>ISD</td>
 						<td>2011-09-30</td>
 						<td>480x680</td>
+						<td>c u r m</td>
 					</tr>
 				
 					<tr>
@@ -1197,6 +1566,7 @@
 						<td>PD3</td>
 						<td>2011-11-18</td>
 						<td>480x680</td>
+						<td>c u r m</td>
 					</tr>
 				
 					<tr>
@@ -1204,6 +1574,7 @@
 						<td>DKA</td>
 						<td>2012-02-03</td>
 						<td>480x680</td>
+						<td>c u r m</td>
 					</tr>
 				
 					<tr>
@@ -1211,6 +1582,7 @@
 						<td>DDI</td>
 						<td>2012-03-30</td>
 						<td>480x680</td>
+						<td>c u r m</td>
 					</tr>
 				
 					<tr>
@@ -1218,6 +1590,7 @@
 						<td>AVR</td>
 						<td>2012-05-04</td>
 						<td>480x680</td>
+						<td>c u r m</td>
 					</tr>
 				
 					<tr>
@@ -1225,6 +1598,7 @@
 						<td>PC2</td>
 						<td>2012-06-01</td>
 						<td>480x680<br>1490x1040</td>
+						<td>c u r m</td>
 					</tr>
 				
 					<tr>
@@ -1232,6 +1606,7 @@
 						<td>M13</td>
 						<td>2012-07-13</td>
 						<td>480x680</td>
+						<td>c u r m</td>
 					</tr>
 				
 					<tr>
@@ -1239,6 +1614,7 @@
 						<td>V12</td>
 						<td>2012-08-31</td>
 						<td>480x680</td>
+						<td>c u r m</td>
 					</tr>
 				
 					<tr>
@@ -1246,6 +1622,7 @@
 						<td>DDJ</td>
 						<td>2012-09-07</td>
 						<td>480x680</td>
+						<td>c u r m</td>
 					</tr>
 				
 					<tr>
@@ -1253,6 +1630,7 @@
 						<td>RTR</td>
 						<td>2012-10-05</td>
 						<td>480x680</td>
+						<td>c u r m</td>
 					</tr>
 				
 					<tr>
@@ -1260,6 +1638,7 @@
 						<td>CMA</td>
 						<td>2012-11-02</td>
 						<td>480x680</td>
+						<td>c u r m</td>
 					</tr>
 				
 					<tr>
@@ -1267,6 +1646,7 @@
 						<td>GTC</td>
 						<td>2013-02-01</td>
 						<td>480x680</td>
+						<td>c u r m</td>
 					</tr>
 				
 					<tr>
@@ -1274,6 +1654,7 @@
 						<td>DDK</td>
 						<td>2013-03-15</td>
 						<td>480x680</td>
+						<td>c u r m</td>
 					</tr>
 				
 					<tr>
@@ -1281,6 +1662,7 @@
 						<td>DGM</td>
 						<td>2013-05-03</td>
 						<td>480x680</td>
+						<td>c u r m</td>
 					</tr>
 				
 					<tr>
@@ -1288,6 +1670,7 @@
 						<td>MMA</td>
 						<td>2013-06-07</td>
 						<td>480x680</td>
+						<td>c u r m</td>
 					</tr>
 				
 					<tr>
@@ -1295,6 +1678,7 @@
 						<td>M14</td>
 						<td>2013-07-19</td>
 						<td>480x680</td>
+						<td>c u r m</td>
 					</tr>
 				
 					<tr>
@@ -1302,6 +1686,7 @@
 						<td>V13</td>
 						<td>2013-08-23</td>
 						<td>480x680</td>
+						<td>c u r m</td>
 					</tr>
 				
 					<tr>
@@ -1309,6 +1694,7 @@
 						<td>DDL</td>
 						<td>2013-09-06</td>
 						<td>480x680</td>
+						<td>c u r m</td>
 					</tr>
 				
 					<tr>
@@ -1316,6 +1702,7 @@
 						<td>THS</td>
 						<td>2013-09-27</td>
 						<td>480x680</td>
+						<td>c u r m</td>
 					</tr>
 				
 					<tr>
@@ -1323,6 +1710,7 @@
 						<td>C13</td>
 						<td>2013-11-01</td>
 						<td>480x680</td>
+						<td>c u r m</td>
 					</tr>
 				
 					<tr>
@@ -1330,6 +1718,7 @@
 						<td>BNG</td>
 						<td>2014-02-07</td>
 						<td>480x680</td>
+						<td>c u r m</td>
 					</tr>
 				
 					<tr>
@@ -1337,6 +1726,7 @@
 						<td>DDM</td>
 						<td>2014-03-14</td>
 						<td>223x310</td>
+						<td>c u r m</td>
 					</tr>
 				
 					<tr>
@@ -1344,6 +1734,7 @@
 						<td>JOU</td>
 						<td>2014-05-02</td>
 						<td>223x310</td>
+						<td>c u r m</td>
 					</tr>
 				
 					<tr>
@@ -1351,6 +1742,7 @@
 						<td>MD1</td>
 						<td>2014-05-30</td>
 						<td>223x310</td>
+						<td>None</td>
 					</tr>
 				
 			</tbody>
@@ -1369,6 +1761,7 @@
 			<li>HUGE thanks to <a href="http://www.slightlymagic.net/forum/viewforum.php?f=15">CCGHQ</a>. Without their awesome work, this site would not be possible.</li>
 			<li><a href="http://wiki.mtgsalvation.com/article/Main_Page">MTG Salvation Wiki</a> for an awesome resource</li>
 			<li><a href="http://company.wizards.com/">Wizards of the Coast</a> for continuing to support and develop game that I first started playing back in 1994!</li>
+			<li>BaconCat and the other folks who contributed set and mana symbols</li>
 		</ul>
 		<br>
 		<br>
@@ -1376,12 +1769,9 @@
 		<a name="missing-sets"></a>
 		<h1>Missing Sets<a href="#top">(back to top)</a></h1>
 		<ul>
-			<li>Deck Builder's Toolkit Series</li>
-			<li>Renaissance (Non-English)</li>
+			<li>Deck Builder's Toolkit Series: No known scans available</li>
+			<li>Renaissance: Non-english</li>
 		</ul>
-		<br>
-		<p>These sets are not on gatherer and I have not located any scans of the cards, thus they are not available here.</p>
-		<br>
 		<br>
 		<hr>
 		<a name="known-issues"></a>

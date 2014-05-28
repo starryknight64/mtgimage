@@ -177,6 +177,1229 @@ table td:last-child {
   text-align: left;
   white-space: normal;
 }
-table.setListTable td:last-child {
-  text-align: right;
+table.setListTable td:nth-child(2) {
+  text-align: center;
+}
+.symbolsSection div.symbol {
+  display: inline-block;
+  text-align: center;
+  margin-right: 0.5em;
+  width: 3em;
+  margin-bottom: 1em;
+}
+.symbolsSection div.symbol div {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+  line-height: 32px;
+}
+#manaSymbolsSection div.symbol div {
+  background-image: url("/manaSymbolsSprite.png");
+}
+#manaSymbolsSection div.symbol div.fourteen {
+  width: 32px;
+  height: 32px;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.fourteen.selected {
+  background-position: 50% 50%, 0px 0px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.bg {
+  width: 32px;
+  height: 32px;
+  background-position: -32px 0px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.bg.selected {
+  background-position: 50% 50%, -32px 0px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.onemillion {
+  width: 32px;
+  height: 6px;
+  background-position: -64px 0px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.onemillion.selected {
+  background-position: 50% 50%, -64px 0px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.pr {
+  width: 32px;
+  height: 32px;
+  background-position: -96px 0px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.pr.selected {
+  background-position: 50% 50%, -96px 0px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.w {
+  width: 32px;
+  height: 32px;
+  background-position: -128px 0px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.w.selected {
+  background-position: 50% 50%, -128px 0px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.twoblue {
+  width: 32px;
+  height: 32px;
+  background-position: -160px 0px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.twoblue.selected {
+  background-position: 50% 50%, -160px 0px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.x {
+  width: 32px;
+  height: 32px;
+  background-position: -192px 0px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.x.selected {
+  background-position: 50% 50%, -192px 0px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.wb {
+  width: 32px;
+  height: 32px;
+  background-position: -224px 0px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.wb.selected {
+  background-position: 50% 50%, -224px 0px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.seven {
+  width: 32px;
+  height: 32px;
+  background-position: 0px -32px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.seven.selected {
+  background-position: 50% 50%, 0px -32px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.r {
+  width: 32px;
+  height: 32px;
+  background-position: 0px -64px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.r.selected {
+  background-position: 50% 50%, 0px -64px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.b {
+  width: 32px;
+  height: 32px;
+  background-position: 0px -96px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.b.selected {
+  background-position: 50% 50%, 0px -96px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.hw {
+  width: 16px;
+  height: 32px;
+  background-position: 0px -128px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.hw.selected {
+  background-position: 50% 50%, 0px -128px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.twenty {
+  width: 32px;
+  height: 32px;
+  background-position: 0px -160px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.twenty.selected {
+  background-position: 50% 50%, 0px -160px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.z {
+  width: 32px;
+  height: 32px;
+  background-position: 0px -192px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.z.selected {
+  background-position: 50% 50%, 0px -192px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.br {
+  width: 32px;
+  height: 32px;
+  background-position: 0px -224px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.br.selected {
+  background-position: 50% 50%, 0px -224px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.eight {
+  width: 32px;
+  height: 32px;
+  background-position: -32px -32px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.eight.selected {
+  background-position: 50% 50%, -32px -32px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.thirteen {
+  width: 32px;
+  height: 32px;
+  background-position: -64px -32px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.thirteen.selected {
+  background-position: 50% 50%, -64px -32px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.pu {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -32px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.pu.selected {
+  background-position: 50% 50%, -96px -32px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.gw {
+  width: 32px;
+  height: 32px;
+  background-position: -128px -32px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.gw.selected {
+  background-position: 50% 50%, -128px -32px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.u {
+  width: 32px;
+  height: 32px;
+  background-position: -160px -32px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.u.selected {
+  background-position: 50% 50%, -160px -32px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.s {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -32px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.s.selected {
+  background-position: 50% 50%, -192px -32px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.twogreen {
+  width: 32px;
+  height: 32px;
+  background-position: -224px -32px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.twogreen.selected {
+  background-position: 50% 50%, -224px -32px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.rg {
+  width: 32px;
+  height: 32px;
+  background-position: -32px -64px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.rg.selected {
+  background-position: 50% 50%, -32px -64px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.hg {
+  width: 16px;
+  height: 32px;
+  background-position: -16px -128px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.hg.selected {
+  background-position: 50% 50%, -16px -128px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.five {
+  width: 32px;
+  height: 32px;
+  background-position: -32px -96px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.five.selected {
+  background-position: 50% 50%, -32px -96px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.rw {
+  width: 32px;
+  height: 32px;
+  background-position: -32px -128px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.rw.selected {
+  background-position: 50% 50%, -32px -128px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.one {
+  width: 32px;
+  height: 32px;
+  background-position: -32px -160px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.one.selected {
+  background-position: 50% 50%, -32px -160px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.pg {
+  width: 32px;
+  height: 32px;
+  background-position: -32px -192px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.pg.selected {
+  background-position: 50% 50%, -32px -192px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.nineteen {
+  width: 32px;
+  height: 32px;
+  background-position: -32px -224px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.nineteen.selected {
+  background-position: 50% 50%, -32px -224px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.sixteen {
+  width: 32px;
+  height: 32px;
+  background-position: -64px -64px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.sixteen.selected {
+  background-position: 50% 50%, -64px -64px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.twelve {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -64px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.twelve.selected {
+  background-position: 50% 50%, -96px -64px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.eleven {
+  width: 32px;
+  height: 32px;
+  background-position: -128px -64px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.eleven.selected {
+  background-position: 50% 50%, -128px -64px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.twowhite {
+  width: 32px;
+  height: 32px;
+  background-position: -160px -64px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.twowhite.selected {
+  background-position: 50% 50%, -160px -64px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.twoblack {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -64px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.twoblack.selected {
+  background-position: 50% 50%, -192px -64px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.twored {
+  width: 32px;
+  height: 32px;
+  background-position: -224px -64px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.twored.selected {
+  background-position: 50% 50%, -224px -64px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.three {
+  width: 32px;
+  height: 32px;
+  background-position: -64px -96px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.three.selected {
+  background-position: 50% 50%, -64px -96px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.∞ {
+  width: 32px;
+  height: 32px;
+  background-position: -64px -128px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.∞.selected {
+  background-position: 50% 50%, -64px -128px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.onehundred {
+  width: 32px;
+  height: 17px;
+  background-position: -64px -6px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.onehundred.selected {
+  background-position: 50% 50%, -64px -6px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.four {
+  width: 32px;
+  height: 32px;
+  background-position: -64px -160px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.four.selected {
+  background-position: 50% 50%, -64px -160px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.ur {
+  width: 32px;
+  height: 32px;
+  background-position: -64px -192px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.ur.selected {
+  background-position: 50% 50%, -64px -192px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.ten {
+  width: 32px;
+  height: 32px;
+  background-position: -64px -224px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.ten.selected {
+  background-position: 50% 50%, -64px -224px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.wu {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -96px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.wu.selected {
+  background-position: 50% 50%, -96px -96px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.hr {
+  width: 16px;
+  height: 32px;
+  background-position: -128px -96px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.hr.selected {
+  background-position: 50% 50%, -128px -96px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.pw {
+  width: 32px;
+  height: 32px;
+  background-position: -144px -96px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.pw.selected {
+  background-position: 50% 50%, -144px -96px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.g {
+  width: 32px;
+  height: 32px;
+  background-position: -176px -96px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.g.selected {
+  background-position: 50% 50%, -176px -96px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.hb {
+  width: 16px;
+  height: 32px;
+  background-position: -208px -96px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.hb.selected {
+  background-position: 50% 50%, -208px -96px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.two {
+  width: 32px;
+  height: 32px;
+  background-position: -224px -96px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.two.selected {
+  background-position: 50% 50%, -224px -96px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.nine {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -128px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.nine.selected {
+  background-position: 50% 50%, -96px -128px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.p {
+  width: 18px;
+  height: 32px;
+  background-position: -96px -160px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.p.selected {
+  background-position: 50% 50%, -96px -160px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.y {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -192px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.y.selected {
+  background-position: 50% 50%, -96px -192px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.fifteen {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -224px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.fifteen.selected {
+  background-position: 50% 50%, -96px -224px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.gu {
+  width: 32px;
+  height: 32px;
+  background-position: -128px -128px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.gu.selected {
+  background-position: 50% 50%, -128px -128px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.hu {
+  width: 16px;
+  height: 32px;
+  background-position: -160px -128px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.hu.selected {
+  background-position: 50% 50%, -160px -128px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.six {
+  width: 32px;
+  height: 32px;
+  background-position: -176px -128px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.six.selected {
+  background-position: 50% 50%, -176px -128px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.ub {
+  width: 32px;
+  height: 32px;
+  background-position: -208px -128px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.ub.selected {
+  background-position: 50% 50%, -208px -128px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.seventeen {
+  width: 32px;
+  height: 32px;
+  background-position: -128px -160px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.seventeen.selected {
+  background-position: 50% 50%, -128px -160px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.zero {
+  width: 32px;
+  height: 32px;
+  background-position: -128px -192px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.zero.selected {
+  background-position: 50% 50%, -128px -192px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.eighteen {
+  width: 32px;
+  height: 32px;
+  background-position: -128px -224px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.eighteen.selected {
+  background-position: 50% 50%, -128px -224px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.h {
+  width: 32px;
+  height: 32px;
+  background-position: -160px -160px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.h.selected {
+  background-position: 50% 50%, -160px -160px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#manaSymbolsSection div.symbol div.pb {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -160px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#manaSymbolsSection div.symbol div.pb.selected {
+  background-position: 50% 50%, -192px -160px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#otherSymbolsSection div.symbol {
+  width: 7em;
+}
+#otherSymbolsSection div.symbol div {
+  background-image: url("/otherSymbolsSprite.png");
+}
+#otherSymbolsSection div.symbol div.planeswalker {
+  width: 32px;
+  height: 28px;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#otherSymbolsSection div.symbol div.planeswalker.selected {
+  background-position: 50% 50%, 0px 0px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#otherSymbolsSection div.symbol div.forwardslash {
+  width: 12px;
+  height: 32px;
+  background-position: 0px -28px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#otherSymbolsSection div.symbol div.forwardslash.selected {
+  background-position: 50% 50%, 0px -28px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#otherSymbolsSection div.symbol div.q {
+  width: 32px;
+  height: 32px;
+  background-position: -12px -28px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#otherSymbolsSection div.symbol div.q.selected {
+  background-position: 50% 50%, -12px -28px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#otherSymbolsSection div.symbol div.creature {
+  width: 32px;
+  height: 28px;
+  background-position: -32px 0px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#otherSymbolsSection div.symbol div.creature.selected {
+  background-position: 50% 50%, -32px 0px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#otherSymbolsSection div.symbol div.t {
+  width: 32px;
+  height: 32px;
+  background-position: -12px -60px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#otherSymbolsSection div.symbol div.t.selected {
+  background-position: 50% 50%, -12px -60px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#otherSymbolsSection div.symbol div.sorcery {
+  width: 25px;
+  height: 32px;
+  background-position: -12px -92px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#otherSymbolsSection div.symbol div.sorcery.selected {
+  background-position: 50% 50%, -12px -92px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#otherSymbolsSection div.symbol div.artifact {
+  width: 23px;
+  height: 32px;
+  background-position: -44px -28px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#otherSymbolsSection div.symbol div.artifact.selected {
+  background-position: 50% 50%, -44px -28px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#otherSymbolsSection div.symbol div.chaosdice {
+  width: 32px;
+  height: 27px;
+  background-position: -64px 0px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#otherSymbolsSection div.symbol div.chaosdice.selected {
+  background-position: 50% 50%, -64px 0px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#otherSymbolsSection div.symbol div.toughness {
+  width: 18px;
+  height: 32px;
+  background-position: -67px -28px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#otherSymbolsSection div.symbol div.toughness.selected {
+  background-position: 50% 50%, -67px -28px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#otherSymbolsSection div.symbol div.enchantment {
+  width: 32px;
+  height: 25px;
+  background-position: -85px -28px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#otherSymbolsSection div.symbol div.enchantment.selected {
+  background-position: 50% 50%, -85px -28px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#otherSymbolsSection div.symbol div.instant {
+  width: 24px;
+  height: 32px;
+  background-position: -44px -60px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#otherSymbolsSection div.symbol div.instant.selected {
+  background-position: 50% 50%, -44px -60px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#otherSymbolsSection div.symbol div.planeswalk {
+  width: 17px;
+  height: 32px;
+  background-position: -44px -92px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#otherSymbolsSection div.symbol div.planeswalk.selected {
+  background-position: 50% 50%, -44px -92px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#otherSymbolsSection div.symbol div.multiple {
+  width: 32px;
+  height: 32px;
+  background-position: -68px -60px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#otherSymbolsSection div.symbol div.multiple.selected {
+  background-position: 50% 50%, -68px -60px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#otherSymbolsSection div.symbol div.land {
+  width: 32px;
+  height: 25px;
+  background-position: -68px -92px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#otherSymbolsSection div.symbol div.land.selected {
+  background-position: 50% 50%, -68px -92px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
+}
+#otherSymbolsSection div.symbol div.power {
+  width: 18px;
+  height: 32px;
+  background-position: -100px -60px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#otherSymbolsSection div.symbol div.power.selected {
+  background-position: 50% 50%, -100px -60px;
+  background-repeat: no-repeat, no-repeat;
+  background-clip: border-box, content-box;
 }

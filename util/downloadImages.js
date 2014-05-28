@@ -24,12 +24,10 @@ function usage()
 if(process.argv.length<3)
 	usage();
 
-var setToDo = process.argv[2];
-
-var targetSet = C.SETS.mutateOnce(function(SET) { if(SET.name.toLowerCase()===setToDo.toLowerCase() || SET.code.toLowerCase()===setToDo.toLowerCase()) { return SET; } });
+var targetSet = C.SETS.mutateOnce(function(SET) { if(SET.name.toLowerCase()===process.argv[2].toLowerCase() || SET.code.toLowerCase()===process.argv[2].toLowerCase()) { return SET; } });
 if(!targetSet)
 {
-	base.error("Set %s not found!", setToDo);
+	base.error("Set %s not found!", process.argv[2]);
 	process.exit(1);
 }
 
